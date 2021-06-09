@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>function-over-fashion</title>
+  <link rel="stylesheet" type="text/css" title="styles.css" href="css/styles.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="navbar navbar-expand-lg navbar-dark bg-dark min-vw-100">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Function / Fashion</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#topNavLinks" aria-controls="topNavLinks" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  justify-content-end" id="topNavLinks">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Fashion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Function</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Account</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-danger" type="submit">Search</button>
+        </form>
+        <button class="btn btn-large mx-2 btn-outline-danger" id="advSearchBtn">Advanced Search</button>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid d-flex align-items-center justify-content-center bg-danger">
+    <span class="m-2" id="instruction">
+      Click a column and scroll down for departments.
+    </span>
+  </div>
+  <div class="container-fluid g-0 min-vh-100">
+    <div class="row">
+      <div class="col-12 col-xxl-4 border border-dark d-flex align-items-center justify-content-center bg-primary min-vh-100 columnSection" id="workCol">
+        <h2 class="mt-4 align-self-start">
+          Work
+        </h2>
+        <a class="columnImage" data-bs-toggle="popover" data-bs-content="<p>Photo by <a href='https://unsplash.com/@arronchoi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Arron Choi</a> on <a href='https://unsplash.com/s/photos/worker?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText'>Unsplash</a></p>"><img class="columnImage" src="images/arron-choi-unsplash.jpg" alt="" /></a>
+      </div>
+      <div class="col-12 col-xxl-4 border border-dark d-flex align-items-center justify-content-center bg-secondary min-vh-100 columnSection" id="casualCol">
+        <h2 class="mt-4 align-self-start">
+          Casual
+        </h2>
+        <a class="columnImage" data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@jmuniz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Joel Muniz</a> on <a href="https://unsplash.com/s/photos/friends?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="columnImage" src="images/joel-muniz-unsplash.jpg" alt="" /></a>
+      </div>
+      <div class="col-12 col-xxl-4 border border-dark d-flex align-items-center justify-content-center bg-info min-vh-100 columnSection" id="sportingCol">
+        <h2 class="mt-4 align-self-start">
+          Sporting
+        </h2>
+        <a class="columnImage" data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@fegiii?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Felipe Giacometti</a> on <a href="https://unsplash.com/s/photos/hiking?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="columnImage" src="images/felipe-giacometti-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="accordian accordian-flush my-2" id="workAccordian">
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="workHatsHeader">
+        <button class="accordian-button workAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#workHatsBody" aria-expanded="false" aria-controls="workHatsBody">
+          Hats
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="workHatsBody" aria-labelledby="workHats" data-bs-parent="#workHats">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@scienceinhd?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Science in HD</a> on <a href="https://unsplash.com/s/photos/hard-hat?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/science-in-hd-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="workOutfitsHeader">
+        <button class="accordian-button workAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#workOutfitsBody" aria-expanded="false" aria-controls="workOutfitsBody">
+          Outfits
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="workOutfitsBody" aria-labelledby="workOutfits" data-bs-parent="#workOutfits">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@ehmitrich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Антон Дмитриев</a> on <a href="https://unsplash.com/s/photos/electrician?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/ehmitrich-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="workJacketsHeader">
+        <button class="accordian-button workAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#workJacketsBody" aria-expanded="false" aria-controls="workJacketsBody">
+          Jackets
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="workJacketsBody" aria-labelledby="workJackets" data-bs-parent="#workJackets">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@ehmitrich?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Антон Дмитриев</a> on <a href="https://unsplash.com/s/photos/electrician?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/ehmitrich2-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="workShirtsHeader">
+        <button class="accordian-button workAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#workShirtsBody" aria-expanded="false" aria-controls="workShirtsBody">
+          Shirts
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="workShirtsBody" aria-labelledby="workShirts" data-bs-parent="#workShirts">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@emmages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emmanuel Ikwuegbu</a> on <a href="https://unsplash.com/s/photos/electrician?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/emmanuel-ikwuegbu-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="workPantsHeader">
+        <button class="accordian-button workAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#workPantsBody" aria-expanded="false" aria-controls="workPantsBody">
+          Pants
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="workPantsBody" aria-labelledby="workPants" data-bs-parent="#workPants">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@emmages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emmanuel Ikwuegbu</a> on <a href="https://unsplash.com/s/photos/electrician?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/pedro-henrique-santos-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="workShoesHeader">
+        <button class="accordian-button workAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#workShoesBody" aria-expanded="false" aria-controls="workShoesBody">
+          Shoes
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="workShoesBody" aria-labelledby="workShoes" data-bs-parent="#workShoes">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@emmages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emmanuel Ikwuegbu</a> on <a href="https://unsplash.com/s/photos/electrician?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/boris-debusscher-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="workAccessoriesHeader">
+        <button class="accordian-button workAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#workAccessoriesBody" aria-expanded="false" aria-controls="workAccessoriesBody">
+          Accessories
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="workAccessoriesBody" aria-labelledby="workAccessories" data-bs-parent="#workAccessories">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@emmages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emmanuel Ikwuegbu</a> on <a href="https://unsplash.com/s/photos/electrician?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/onder-ortel-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="accordian accordian-flush my-2" id="casualAccordian">
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="casualHatsHeader">
+        <button class="accordian-button casualAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#casualHatsBody" aria-expanded="false" aria-controls="casualHatsBody">
+          Hats
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="casualHatsBody" aria-labelledby="casualHats" data-bs-parent="#casualHats">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@emmages?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emmanuel Ikwuegbu</a> on <a href="https://unsplash.com/s/photos/electrician?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/moggy-amrani-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="casualOutfitsHeader">
+        <button class="accordian-button casualAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#casualOutfitsBody" aria-expanded="false" aria-controls="casualOutfitsBody">
+          Outfits
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="casualOutfitsBody" aria-labelledby="casualOutfits" data-bs-parent="#casualOutfits">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@megindoors?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Vic</a> on <a href="https://unsplash.com/s/photos/jumpsuit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/vic-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="casualJacketsHeader">
+        <button class="accordian-button casualAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#casualJacketsBody" aria-expanded="false" aria-controls="casualJacketsBody">
+          Jackets
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="casualJacketsBody" aria-labelledby="casualJackets" data-bs-parent="#casualJackets">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@smithmajorphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Smith Major</a> on <a href="https://unsplash.com/s/photos/jackets?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/smith-major-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="casualShirtsHeader">
+        <button class="accordian-button casualAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#casualShirtsBody" aria-expanded="false" aria-controls="casualShirtsBody">
+          Shirts
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="casualShirtsBody" aria-labelledby="casualShirts" data-bs-parent="#casualShirts">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@startdig?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Start Digital</a> on <a href="https://unsplash.com/s/photos/leisure?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/start-digital-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="casualPantsHeader">
+        <button class="accordian-button casualAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#casualPantsBody" aria-expanded="false" aria-controls="casualPantsBody">
+          Pants
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="casualPantsBody" aria-labelledby="casualPants" data-bs-parent="#casualPants">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@danicanibano?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Daniel Cañibano</a> on <a href="https://unsplash.com/s/photos/leisure?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/daniel-canibano-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="casualShoesHeader">
+        <button class="accordian-button casualAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#casualShoesBody" aria-expanded="false" aria-controls="casualShoesBody">
+          Shoes
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="casualShoesBody" aria-labelledby="casualShoes" data-bs-parent="#casualShoes">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@primipil?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Maksim Chernishev</a> on <a href="https://unsplash.com/s/photos/leisure?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/maksim-chernishev-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="casualAccessoriesHeader">
+        <button class="accordian-button casualAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#casualAccessoriesBody" aria-expanded="false" aria-controls="casualAccessoriesBody">
+          Accessories
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="casualAccessoriesBody" aria-labelledby="casualAccessories" data-bs-parent="#casualAccessories">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@yogendras31?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yogendra Singh</a> on <a href="https://unsplash.com/s/photos/leisure?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/yogendra-singh-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="accordian accordian-flush my-2" id="sportingAccordian">
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="sportingHatsHeader">
+        <button class="accordian-button sportingAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#sportingHatsBody" aria-expanded="false" aria-controls="sportingHatsBody">
+          Hats
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="sportingHatsBody" aria-labelledby="sportingHats" data-bs-parent="#sportingHats">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@shivelycreative?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Shively</a> on <a href="https://unsplash.com/s/photos/sporting-event?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/nathan-shively-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="sportingOutfitsHeader">
+        <button class="accordian-button sportingAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#sportingOutfitsBody" aria-expanded="false" aria-controls="sportingOutfitsBody">
+          Outfits
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="sportingOutfitsBody" aria-labelledby="sportingOutfits" data-bs-parent="#sportingOutfits">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@robwingate?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rob Wingate</a> on <a href="https://unsplash.com/s/photos/sporting-event?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/rob-wingate-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="sportingJacketsHeader">
+        <button class="accordian-button sportingAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#sportingJacketsBody" aria-expanded="false" aria-controls="sportingJacketsBody">
+          Jackets
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="sportingJacketsBody" aria-labelledby="sportingJackets" data-bs-parent="#sportingJackets">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@worldsbetweenlines?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Patrick Hendry</a> on <a href="https://unsplash.com/s/photos/hiking?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/patrick-hendry-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="sportingShirtsHeader">
+        <button class="accordian-button sportingAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#sportingShirtsBody" aria-expanded="false" aria-controls="sportingShirtsBody">
+          Shirts
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="sportingShirtsBody" aria-labelledby="sportingShirts" data-bs-parent="#sportingShirts">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@ryanhoffman007?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ryan Hoffman</a> on <a href="https://unsplash.com/s/photos/sporting-event?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/ryan-hoffman-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="sportingPantsHeader">
+        <button class="accordian-button sportingAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#sportingPantsBody" aria-expanded="false" aria-controls="sportingPantsBody">
+          Pants
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="sportingPantsBody" aria-labelledby="sportingPants" data-bs-parent="#sportingPants">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@quinoal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Quino Al</a> on <a href="https://unsplash.com/s/photos/sporting-event?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/quino-al-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="sportingShoesHeader">
+        <button class="accordian-button sportingAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#sportingShoesBody" aria-expanded="false" aria-controls="sportingShoesBody">
+          Shoes
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="sportingShoesBody" aria-labelledby="sportingShoes" data-bs-parent="#sportingShoes">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@cchau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Chau Cédric</a> on <a href="https://unsplash.com/s/photos/sporting-event?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/chau-cedric-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+    <div class="accordian-item d-flex flex-column align-items-center justify-content-center">
+      <h2 class="accordian-header" id="sportingAccessoriesHeader">
+        <button class="accordian-button sportingAccordianButton collapsed min-vw-100 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#sportingAccessoriesBody" aria-expanded="false" aria-controls="sportingAccessoriesBody">
+          Accessories
+        </button>
+      </h2>
+      <div class="accordian-collapse collapse" id="sportingAccessoriesBody" aria-labelledby="sportingAccessories" data-bs-parent="#sportingAccessories">
+        <a data-bs-toggle="popover" data-bs-content='<p>Photo by <a href="https://unsplash.com/@quinoal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Quino Al</a> on <a href="https://unsplash.com/s/photos/sporting-event?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>'><img class="accordianImage" src="images/quino-al2-unsplash.jpg" alt="" /></a>
+      </div>
+    </div>
+  </div>
+  <footer id="footerContainer">
+    <div class="d-flex flex-row" id="footerInnerWrapper">
+      <div class="g-0 d-inline-flex flex-row justify-content-around w-50 h-25 ps-5 pt-5 footerMenuGrouper">
+        <nav class="nav d-flex flex-column align-items-center p-2">
+          <h5 class="pt-3">Site Map</h5>
+          <ul class="nav flex-column pt-1">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">Fashion / Function</a>
+            </li>
+            <li>
+              <a href="#">Account</a>
+            </li>
+            <li>
+              <a href="#">Wishlist</a>
+            </li>
+            <li>
+              <a href="#">Shopping Cart</a>
+            </li>
+            <li>
+              <a href="#">Search Catalogue</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav d-flex flex-column align-items-center p-2">
+          <h5 class="pt-3">Divisions</h5>
+          <ul class="nav flex-column pt-1">
+            <li>
+              <a href="#">Fashion / Function</a>
+            </li>
+            <li>
+              <a href="#">Men's</a>
+            </li>
+            <li>
+              <a href="#">Women's</a>
+            </li>
+            <li>
+              <a href="#">Children's</a>
+            </li>
+            <li>
+              <a href="#">Work</a>
+            </li>
+            <li>
+              <a href="#">Casual</a>
+            </li>
+            <li>
+              <a href="#">Sporting</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav d-flex flex-column align-items-center p-2">
+          <h5 class="pt-3">Clothing Departments</h5>
+          <ul class="nav flex-column pt-1">
+            <li>
+              <a href="#">Hats</a>
+            </li>
+            <li>
+              <a href="#">Outfits</a>
+            </li>
+            <li>
+              <a href="#">Jackets</a>
+            </li>
+            <li>
+              <a href="#">Shirts</a>
+            </li>
+            <li>
+              <a href="#">Pants</a>
+            </li>
+            <li>
+              <a href="#">Shoes</a>
+            </li>
+            <li>
+              <a href="#">Undergarments</a>
+            </li>
+            <li>
+              <a href="#">Accessories</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="g-0 d-inline-flex flex-row justify-content-around w-50 h-25 pe-5 pt-5 footerMenuGrouper">
+        <nav class="nav d-flex flex-column align-items-center p-2">
+          <h5 class="pt-3">Corporate Departments</h5>
+          <ul class="nav flex-column pt-1">
+            <li>
+              <a href="#">Customer Service</a>
+            </li>
+            <li>
+              <a href="#">Career Opportunities</a>
+            </li>
+            <li>
+              <a href="#">Web Master</a>
+            </li>
+            <li>
+              <a href="#">Human Resources</a>
+            </li>
+            <li>
+              <a href="#">Fulfilment</a>
+            </li>
+            <li>
+              <a href="#">Sales</a>
+            </li>
+            <li>
+              <a href="#">Finance</a>
+            </li>
+            <li>
+              <a href="#">Marketing</a>
+            </li>
+            <li>
+              <a href="#">Purchasing</a>
+            </li>
+            <li>
+              <a href="#">Operations</a>
+            </li>
+            <li>
+              <a href="#">Management</a>
+            </li>
+        </nav>
+        <nav class="nav d-flex flex-column align-items-center p-2">
+          <h5 class="pt-3">Bears</h5>
+          <ul class="nav flex-column pt-1">
+            <li>
+              <a href="#">Polar</a>
+            </li>
+            <li>
+              <a href="#">Grizzly</a>
+            </li>
+            <li>
+              <a href="#">Brown</a>
+            </li>
+            <li>
+              <a href="#">Black</a>
+            </li>
+            <li>
+              <a href="#">Panda</a>
+            </li>
+            <li>
+              <a href="#">Koala</a>
+            </li>
+            <li>
+              <a href="#">Teddy</a>
+            </li>
+            <li>
+              <a href="#">Gummy</a>
+            </li>
+            <li>
+              <a href="#">Care</a>
+            </li>
+            <li>
+              <a href="#" data-bs-toggle="tooltip" title="google it">Water</a>
+            </li>
+        </nav>
+        <nav class="nav d-flex flex-column align-items-center p-2">
+          <h5 class="pt-3">Dragons</h5>
+          <ul class="nav flex-column pt-1">
+            <li>
+              <a href="#">Metallic</a>
+            </li>
+            <li>
+              <a href="#">Chromatic</a>
+            </li>
+            <li>
+              <a href="#">Gem</a>
+            </li>
+            <li>
+              <a href="#">Planar</a>
+            </li>
+            <li>
+              <a href="#">Celestial</a>
+            </li>
+            <li>
+              <a href="#">Miscellaneous True</a>
+            </li>
+            <li>
+              <a href="#">Drakes</a>
+            </li>
+            <li>
+              <a href="#">Dragonkin</a>
+            </li>
+            <li>
+              <a href="#">Wyverns</a>
+            </li>
+            <li>
+              <a href="#">Hydras</a>
+            </li>
+            <li>
+              <a href="#">Sea Serpents</a>
+            </li>
+            <li>
+              <a href="#">Turtles</a>
+            </li>
+        </nav>
+      </div>
+    </div>
+    <div class="d-flex flex-row w-100 p-2 align-items-center justify-content-center">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-discord"></i>
+      <i class="fab fa-reddit"></i>
+    </div>
+  </footer>
+  <div class="d-flex align-items-center justify-content-center g-0 aboutPanel">
+    <p class="p-5">
+      The set up for this site pretty much the same as Fashion over Function.  The big addition is jQuery.  It wasn't used in the last one because I just started learning it.  And I'm already wondering how I ever got along without it.  As noted in the gallery, this site is a mock-up, a front-end stub. The CSS is themed Bootstrap 5.0.1. Hopefully, you noticed that all of the photos on this page have linked popovers which give just credit to the good folks at <a href="unsplash.com" target="_blank">unsplash.com</a>. If this were an actual working
+      website, I'd replace those popovers with links to product pages. The code for this site is available on <a href="https://github.com/blainedeyoung/function-over-fashion" target="_blank">github</a>. I hope you enjoyed the show. This link will take you back to the <a href="../../gallery/">gallery</a>. May Shai-Hulud clear the path before you.
+    </p>
+  </div>
+  
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Fontawesome icons -->
+  <script src="https://kit.fontawesome.com/758873896e.js" crossorigin="anonymous"></script>
+  <!-- bootstrap bundle -->
+  <script src="../bootstrap-5.0.1//dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
