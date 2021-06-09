@@ -9646,11 +9646,11 @@ i {
     height: 25vh; }
 
   .navbar-brand {
-    font-size: 100%; }
+    font-size: 100% !important; }
 
   .accordianImage {
-    height: 10rem;
-    width: 15rem; }
+    height: 10rem !important;
+    width: 15rem !important; }
 
   h5, .h5 {
-    font-size: 100%; } }
+    font-size: 100% !important; } }
