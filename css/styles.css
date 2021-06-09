@@ -9653,9 +9653,8 @@ i {
     width: 15rem !important; }
 
   .footerMenuGrouper {
-    -webkit-box-pack: center !important;
-        -ms-flex-pack: center !important;
-            justify-content: center !important; }
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
 
   h5, .h5 {
     font-size: 100% !important; } }
