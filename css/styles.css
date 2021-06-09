@@ -9652,5 +9652,10 @@ i {
     height: 10rem !important;
     width: 15rem !important; }
 
+  .footerMenuGrouper {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important; }
+
   h5, .h5 {
     font-size: 100% !important; } }
