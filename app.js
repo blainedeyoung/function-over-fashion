@@ -20,7 +20,7 @@ const popoverList = popoverTriggerList.map((popoverTriggerEl) => {
 
 //the two event listeners below toggle increased navbar size on collapse
 //so the links don't spill out over the page content
-const collapsible = document.querySelector("#topNavLinks");
+const collapsible = document.querySelector("#top-nav-links");
 const navbar = document.querySelector(".navbar");
 collapsible.addEventListener('show.bs.collapse', () => {
   navbar.classList.add("expanded");
@@ -30,14 +30,14 @@ collapsible.addEventListener('hide.bs.collapse', () => {
   navbar.classList.remove("expanded");
 })
 
-$("#workCol").on("click", () => {
-    $("#workAccordian").toggle();
+$("#work-col").on("click", () => {
+    $("#work-accordian").toggle();
 });
-$("#casualCol").on("click", () => {
-  $("#casualAccordian").toggle();
+$("#casual-col").on("click", () => {
+  $("#casual-accordian").toggle();
 });
-$("#sportingCol").on("click", () => {
-  $("#sportingAccordian").toggle();
+$("#sporting-col").on("click", () => {
+  $("#sporting-accordian").toggle();
 });
 
  

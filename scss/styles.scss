@@ -13,7 +13,7 @@ body {
 }
 
 .navbar {
-  @include backgroundGradient;
+  @include background-gradient;
   height: 10vh;
 
   & .navbar-brand {
@@ -31,37 +31,37 @@ p a {
   }
 }
 
-.columnSection {
+.column-section {
   text-shadow: 2px 2px 10px black;
 
-  &#workCol {
+  &#work-col {
     color: $secondary;
   }
 
-  &#casualCol {
+  &#casual-col {
     color: $info;
   }
 
-  &#sportingCol {
+  &#sporting-col {
     color: $primary;
   }
 }
 
-.columnImage {
+.column-image {
   position: absolute;
   height: 40rem;
   width: 30rem;
 }
 
-#workAccordian {
+#work-accordian {
   display: none;
 }
 
-#casualAccordian {
+#casual-accordian {
   display: none;
 }
 
-#sportingAccordian {
+#sporting-accordian {
   display: none;
 }
 
@@ -69,29 +69,29 @@ p a {
   color: white;
 }
 
-.workAccordianButton {
+.work-accordian-button {
   background-color: #5B2A8D;
   border-color: $info;
 }
 
-.casualAccordianButton {
+.casual-accordian-button {
   background-color: #327AC2;
   border-color: $info;
 }
 
-.sportingAccordianButton {
+.sporting-accordian-button {
   background-color: #C5BC11;
   border-color: $primary;
 }
 
-.accordianImage {
+.accordian-image {
   height: 20rem;
   width: 30rem;
   margin: 2rem;
 }
 
-#footerContainer {
-  @include backgroundGradient;
+#footer-container {
+  @include background-gradient;
   color: white;
   font-size: 75%;
 
@@ -120,7 +120,7 @@ i {
   }
 }
 
-.aboutPanel {
+.about-panel {
   min-height: 9rem;
   background-color: #D0D5DB;
 }

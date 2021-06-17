@@ -7024,55 +7024,55 @@ p a {
   p a:hover {
     background-color: orange; }
 
-.columnSection {
+.column-section {
   text-shadow: 2px 2px 10px black; }
-  .columnSection#workCol {
+  .column-section#work-col {
     color: #4296EA; }
-  .columnSection#casualCol {
+  .column-section#casual-col {
     color: #FAF331; }
-  .columnSection#sportingCol {
+  .column-section#sporting-col {
     color: #9159C9; }
 
-.columnImage {
+.column-image {
   position: absolute;
   height: 40rem;
   width: 30rem; }
 
-#workAccordian {
+#work-accordian {
   display: none; }
 
-#casualAccordian {
+#casual-accordian {
   display: none; }
 
-#sportingAccordian {
+#sporting-accordian {
   display: none; }
 
 .accordian-button {
   color: white; }
 
-.workAccordianButton {
+.work-accordian-button {
   background-color: #5B2A8D;
   border-color: #FAF331; }
 
-.casualAccordianButton {
+.casual-accordian-button {
   background-color: #327AC2;
   border-color: #FAF331; }
 
-.sportingAccordianButton {
+.sporting-accordian-button {
   background-color: #C5BC11;
   border-color: #9159C9; }
 
-.accordianImage {
+.accordian-image {
   height: 20rem;
   width: 30rem;
   margin: 2rem; }
 
-#footerContainer {
+#footer-container {
   background: #faf331;
   background: radial-gradient(circle, #faf331 0%, #4296ea 29%, #9159c9 82%);
   color: white;
   font-size: 75%; }
-  #footerContainer h5, #footerContainer .h5 {
+  #footer-container h5, #footer-container .h5 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     -webkit-box-pack: center;
@@ -7092,7 +7092,7 @@ i {
   i:hover {
     color: orange; }
 
-.aboutPanel {
+.about-panel {
   min-height: 9rem;
   background-color: #D0D5DB; }
 
@@ -7100,23 +7100,23 @@ i {
   .navbar {
     height: 20vh; }
 
-  #advSearchBtn {
+  #adv-search-btn {
     margin-top: 10px;
     margin-left: 0 !important; }
 
-  #footerInnerWrapper {
+  #footer-inner-wrapper {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important; }
 
-  .footerMenuGrouper {
+  .footer-menu-grouper {
     width: 100% !important; } }
 @media all and (max-width: 48em) {
   .navbar-brand {
     font-size: 300% !important; }
 
-  #footerContainer {
+  #footer-container {
     font-size: 50%; } }
 @media all and (max-width: 40em) {
   .navbar {
@@ -7125,14 +7125,11 @@ i {
   .navbar-brand {
     font-size: 150% !important; }
 
-  .accordian {
-    margin-top: 15vh !important; }
-
-  .accordianImage {
+  .accordian-image {
     height: 10rem !important;
     width: 15rem !important; }
 
-  .footerMenuGrouper {
+  .footer-menu-grouper {
     padding-left: 0 !important;
     padding-right: 0 !important; }
 
